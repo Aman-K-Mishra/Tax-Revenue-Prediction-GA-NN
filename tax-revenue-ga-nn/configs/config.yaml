@@ -1,0 +1,19 @@
+population_size: 20
+generations: 10
+crossover_prob: 0.9
+mutation_prob: 0.4
+
+epochs: 200
+batch_size: 16
+learning_rate: 0.001
+
+csv_path: "data/raw/tax_sample.csv"
+target_column: "tax_revenue"
+
+predict_features:
+  - gdp
+  - inflation
+  - population
+  - imports
+  - exports
+  - corporate_tax_rate
